@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 class LoginRequest {
   static Future<String> login(String username, String password) async {
     try {
-      final host = '';
+      final host = '<Your Host>';
       final url = '$host/data/api/login';
 
       final response = await http.post(

@@ -33,6 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
       print('User connected successfully: $token');
       widget.submit(token);
     } catch (error) {
+      print(error);
       CustomSnackBar.show(
         context,
         'Please check your credentials or try again later',
